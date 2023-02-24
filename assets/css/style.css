@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-verde: #14A400;
+    --cor-branco: #fff;
+    --cor-cinza: #161719;
+}
+
+body {
+    background: linear-gradient(to bottom, #161719 0%, #17181a 100%);
+    height: 100vh;
+}
+
+header nav {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    position: absolute;
+    z-index: 2;
+}
+
+header nav img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.section-primary {
+    height: 100vh;
+    text-align: center;
+    background-image: url(../image/pexels-rodnae-productions-8312863.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-first-section {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.80);
+    background: rgba(22, 23, 25, 0.40);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: relative;
+    padding-top: 10rem;
+}
+
+section .container-first-section h1 {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color: var(--cor-branco);
+}
+
+section .container-first-section h1::selection {
+    background-color: var(--cor-cinza);
+    color: var(--cor-verde);
+}
+
+section .container-first-section p {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color: var(--cor-branco);
+}
+
+section .container-first-section p::selection {
+    background-color: var(--cor-cinza);
+    color: var(--cor-verde);
+}
+
+section .container-first-section button {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 20px;
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.product-list {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 15px;
+    max-width: 1300px;
+    width: 100%;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+    border-radius: 7px;
+}
+
+.container-card-box{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 991px) {
+    .product-list {
+        flex-wrap: wrap;
+    }
+}
