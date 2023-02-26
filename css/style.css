@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* --cor-verde: #14A400; */
+    --cor-verde: cadetblue;
+    --cor-branco: #fff;
+    --cor-cinza: #161719;
+}
+
+body {
+    background: linear-gradient(to bottom, #161719 0%, #17181a 100%);
+    height: 100vh;
+}
+
+header nav {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    display: flex;
+    background-color: transparent;
+}
+
+header {
+    background-image: url(../image/pexels-rodnae-productions-8312862.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    height: 7rem;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.ancora {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ancora {
+    position: relative;
+    display: inline-block;
+}
+
+.ancora::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-branco);
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: right;
+    transition: scale 0.25s;
+}
+
+.ancora:hover {
+    cursor: pointer;
+}
+
+.ancora:hover::before {
+    scale: 1;
+    transform-origin: left;
+}
+
+header nav img {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.section-primary {
+    height: 100vh;
+    text-align: center;
+}
+
+.container-first-section {
+    height: 100vh;
+    background: rgba(22, 23, 25, 0.50);
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+section .container-first-section h1 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color: var(--cor-branco);
+}
+
+section .container-first-section h1::selection {
+    background-color: var(--cor-cinza);
+    color: var(--cor-verde);
+}
+
+section .container-first-section a button {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 20px;
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 17rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+section .container-first-section a button:hover {
+    cursor: pointer;
+}
+
+.product-list {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.product-list li{
+    padding: 1rem 0;
+}
+.card {
+    /* width: 190px;
+    height: 254px; */
+    width: 300px;
+    height: 250px;
+    /* background-color: rgb(113, 206, 126); */
+    background-color: var(--cor-verde);
+    border: 2px solid var(--cor-verde);
+    border-radius: 7px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5%);
+}
+
+.product-list:hover :not(:hover) {
+    opacity: 80%;
+}
+
+.container-card-box {
+    padding-top: 5rem;
+    height: auto;
+}
+
+.container-card-box h2 {
+    text-align: center;
+    color: var(--cor-branco);
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.container-card-box p {
+    width: 100%;
+    text-align: left;
+    padding: 0rem 12rem 2rem 12rem;
+    line-height: 1.8rem;
+    color: var(--cor-branco);
+    font-weight: 600;
+}
+
+footer {
+    height: auto;
+    background-color: #212223;
+    padding-bottom: 0.5rem;
+}
+
+.container-footer {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 2vw;
+}
+
+.new-nomade {
+    font-size: 1rem;
+    margin-bottom: 1vw;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.paragrafo-nomades {
+    color: #aeb1b6;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 2vw;
+    color: #aeb1b6;
+}
+.navegue-aqui {
+    font-size: 1rem;
+    margin-bottom: 1vw;
+    color: var(--cor-verde);
+    font-weight: bolder;
+    margin-top: 2vw;
+}
+
+footer .container-footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer .container-footer ul li {
+    color: var(--cor-branco);
+}
+
+footer .container-footer ul {
+    gap: 30px;
+}
+
+.container-profissional {
+    height: 100vh;
+    text-align: center;
+    background-color: var(--cor-branco);
+    display: grid;
+    place-items: center;
+}
+
+.container-profissional h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.container-card-profissional{
+    background-color: cadetblue;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: grid;
+
+}
+
+.card-profissional{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-perfil{
+    background-image: url(../image/pexels-gustavo-trotta-13790048.jpg);
+    background-size: cover;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.conteiner-imagem-perfil{
+    background-color: var(--cor-branco);
+    height: 4rem;
+    width: 4rem;
+}
+.card-image-perfil h2{
+    position: relative;
+    top: 50%;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.card-image-perfil h3{
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+
+    footer {
+        height: auto;
+        background-color: #212223;
+        margin-top: 25vw;
+        padding-bottom: 20px;
+    }
+
+    .container-footer {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2vw;
+    }
+
+    .new-nomade {
+        font-size: 1.5rem;
+        margin-bottom: 5vw;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .paragrafo-nomades {
+        text-align: left;
+        color: #aeb1b6;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 5vw;
+        margin-bottom: 4vw;
+    }
+
+    .navegue-aqui {
+        font-size: 1.5rem;
+        margin-bottom: 7vw;
+        color: var(--cor-verde);
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .informacoes-final {
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        display: grid;
+    }
+
+    #verificado-selo-final {
+        width: 6vw;
+    }
+
+    .container-card-box {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .container-card-box p {
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .card{
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .card:hover {
+        transform: translateY(0);
+    }
+
+    .ancora {
+        font-size: 0.8rem;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav img {
+        width: 5rem;
+        height: 5rem;
+        padding: 0;
+    }
+
+    header nav {
+        padding: 0%;
+        margin-left: 1rem;
+    }
+
+    .container-card-box p {
+        text-align: center;
+        line-break: auto;
+    }
+
+    section .container-first-section a button {
+        margin-top: 35%;
+        width: 18rem;
+    }
+    .container-card-profissional{
+        width: auto;
+        margin: 1.5rem;
+    }
+    section .container-first-section h1{
+        position: relative;
+        top: 0;
+        width: auto;
+        margin: 1.5rem;
+    }
+    header{
+        background-image: url(../image/pexels-thirdman-6193373.jpg);
+    }
+    .product-list:hover :not(:hover){
+        opacity: 100%;
+    }
+    .product-list li{
+        padding: 0rem 0rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .product-list {
+        flex-wrap: wrap;
+    }
+}
