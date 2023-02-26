@@ -20,6 +20,7 @@ body {
 }
 
 header nav {
+    position: absolute;
     padding: 0.5rem;
     padding-left: 2rem;
     display: flex;
@@ -36,7 +37,7 @@ header {
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
     height: 7rem;
     margin-left: 3rem;
     justify-content: center;
@@ -78,6 +79,7 @@ header nav ul {
 }
 
 header nav img {
+    position: relative;
     margin-top: 1rem;
     width: 5rem;
     height: 5rem;
@@ -96,7 +98,7 @@ header nav img {
 }
 
 section .container-first-section h1 {
-    padding-top: 5rem;
+    padding-top: 10rem;
     text-align: center;
     font-size: 2.0rem;
     font-weight: bolder;
@@ -115,7 +117,7 @@ section .container-first-section a button {
     border-radius: 20px;
     width: 20rem;
     height: 2.5rem;
-    margin-top: 17rem;
+    margin-top: 14rem;
     font-size: 1.3rem;
     font-weight: bolder;
     text-decoration: underline;
@@ -227,7 +229,8 @@ footer .container-footer ul li {
 }
 
 footer .container-footer ul {
-    gap: 30px;
+    font-size: 0.8rem;
+    gap: 15px;
 }
 
 .container-profissional {
@@ -245,7 +248,8 @@ footer .container-footer ul {
 }
 
 .container-card-profissional {
-    background-color: cadetblue;
+    background-color: var(--cor-verde);
+    /* background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB); */
     width: 25rem;
     height: auto;
     border-radius: 15px;
@@ -359,8 +363,10 @@ footer .container-footer ul {
 .container-details details {
     display: flex;
     padding: 1rem;
-    border: 0.5px solid var(--cor-cinza);
+    border: 0.8px solid var(--cor-cinza);
     color: var(--cor-verde);
+    margin: 0.5rem;
+    border-radius: 7px;
 }
 
 .container-details details p {
@@ -379,7 +385,9 @@ footer .container-footer ul {
 }
 
 .container-details details summary {
-    transition: transform 0.2s ease-in-out;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
 }
 
 .section-hr {
@@ -403,7 +411,88 @@ footer .container-footer ul {
     background-size: cover;
     background-position: center right;
 }
-@media (max-width: 600px) {
+
+.section-depoimentos {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    background-color: var(--cor-branco);
+    padding-bottom: 3rem;
+}
+
+.container-depoimentos {
+    display: flex;
+    justify-content: center;
+}
+
+.card-depoimento {
+    width: 250px;
+    height: 360px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--cor-verde);
+    /* background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB); */
+}
+
+.lista-depoimentos li img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 8rem;
+    position: relative;
+    z-index: 2;
+    bottom: -5rem;
+    right: -25%;
+    border: 6px solid var(--cor-branco);
+}
+
+.lista-depoimentos{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1300px;
+    width: 100%;
+}
+.section-depoimentos h2{
+    color: var(--cor-cinza);
+    position: relative;
+    bottom: -3rem;
+    font-size: 2rem;
+
+}
+
+.card-depoimento h3{
+    font-weight: 500;
+    position: relative;
+    top: 6rem;
+    color: var(--cor-branco);
+}
+.card-depoimento .nome-depoimento1{
+    font-weight: 800;
+    position: relative;
+    top: 10rem;
+    font-size: 1.2rem;
+}
+.card-depoimento .nome-depoimento2{
+    font-weight: 800;
+    position: relative;
+    top: 10rem;
+    font-size: 1.2rem;
+}
+.card-depoimento .nome-depoimento3{
+    font-weight: 800;
+    position: relative;
+    top: 8.7rem;
+    font-size: 1.2rem;
+}
+.card-depoimento .nome-depoimento4{
+    font-weight: 800;
+    position: relative;
+    top: 8.7rem;
+    font-size: 1.2rem;
+}
+@media (max-width: 800px) {
 
     footer {
         height: auto;
@@ -459,8 +548,8 @@ footer .container-footer ul {
     }
 
     .card {
-        width: 18rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
     }
 
     .card:hover {
@@ -482,6 +571,8 @@ footer .container-footer ul {
     }
 
     header nav {
+        position: absolute;
+        z-index: -1;
         padding: 0%;
         margin-left: 1rem;
     }
@@ -493,24 +584,21 @@ footer .container-footer ul {
     }
 
     section .container-first-section a button {
-        margin-top: 35%;
+        margin-top: 30%;
         width: 18rem;
     }
 
     .container-card-profissional {
+        height: auto;
         width: auto;
         margin: 1.5rem;
+        display: block;
     }
 
     section .container-first-section h1 {
         position: relative;
-        top: 0;
         width: auto;
         margin: 1.5rem;
-    }
-
-    header {
-        background-image: url(../image/pexels-thirdman-6193373.jpg);
     }
 
     .product-list:hover :not(:hover) {
@@ -525,9 +613,8 @@ footer .container-footer ul {
     .container-details {
         width: 20rem;
     }
-
     .container-footer ul .ancora {
-        font-size: 0.6rem;
+        font-size: 0.46rem;
     }
 
     #card3-img {
@@ -535,11 +622,25 @@ footer .container-footer ul {
         background-size: cover;
         background-position: right;
     }
-
+    .section-depoimentos h2{
+        margin-left: 1.5rem;
+    }
+    .lista-depoimentos{
+        display: block;
+    }
+    .container-profissional h2{
+        margin-bottom: 1rem;
+    } 
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
     .product-list {
         flex-wrap: wrap;
+    }
+    .lista-depoimentos{
+        flex-wrap: wrap;
+    }
+    .section-depoimentos{
+        height: auto;
     }
 }
