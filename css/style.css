@@ -136,9 +136,10 @@ section .container-first-section a button:hover {
     width: 100%;
 }
 
-.product-list li{
+.product-list li {
     padding: 1rem 0;
 }
+
 .card {
     /* width: 190px;
     height: 254px; */
@@ -175,7 +176,7 @@ section .container-first-section a button:hover {
 .container-card-box p {
     width: 100%;
     text-align: left;
-    padding: 0rem 12rem 2rem 12rem;
+    padding: 3rem 12rem 4rem 12rem;
     line-height: 1.8rem;
     color: var(--cor-branco);
     font-weight: 600;
@@ -193,20 +194,21 @@ footer {
     padding-top: 2vw;
 }
 
-.new-nomade {
+.duvidas {
     font-size: 1rem;
     margin-bottom: 1vw;
     color: #fff;
     font-weight: bolder;
 }
 
-.paragrafo-nomades {
+.paragrafo {
     color: #aeb1b6;
     font-weight: 500;
     font-size: 0.8rem;
     line-height: 2vw;
     color: #aeb1b6;
 }
+
 .navegue-aqui {
     font-size: 1rem;
     margin-bottom: 1vw;
@@ -239,26 +241,80 @@ footer .container-footer ul {
 .container-profissional h2 {
     font-size: 2rem;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-.container-card-profissional{
+.container-card-profissional {
     background-color: cadetblue;
     width: 25rem;
-    height: 30rem;
+    height: auto;
     border-radius: 15px;
     padding: 1.5rem;
-    display: grid;
-
+    margin-bottom: 3rem;
 }
 
-.card-profissional{
+.card-profissional {
     display: grid;
     place-items: center;
     justify-content: center;
     align-items: center;
 }
 
-.card-image-perfil{
+.social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #7cdacc;
+}
+
+.social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+
+.tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+.card-image-perfil {
     background-image: url(../image/pexels-gustavo-trotta-13790048.jpg);
     background-size: cover;
     height: 8rem;
@@ -266,27 +322,92 @@ footer .container-footer ul {
     border-radius: 50%;
 }
 
-.conteiner-imagem-perfil{
+.conteiner-imagem-perfil {
     background-color: var(--cor-branco);
     height: 4rem;
     width: 4rem;
 }
-.card-image-perfil h2{
+
+.card-image-perfil h2 {
     position: relative;
     top: 50%;
     align-items: center;
-    font-size: 1.5rem;
 }
-.card-image-perfil h3{
+
+.card-image-perfil h3 {
     font-size: 1rem;
 }
 
+.section-details {
+    display: grid;
+    justify-content: center;
+    background-color: var(--cor-branco);
+}
+
+.container-details {
+    width: 50vw;
+    margin-bottom: 6rem;
+}
+
+.container-details h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.container-details details {
+    display: flex;
+    padding: 1rem;
+    border: 0.5px solid var(--cor-cinza);
+    color: var(--cor-verde);
+}
+
+.container-details details p {
+    color: var(--cor-cinza);
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.container-details details:hover {
+    cursor: pointer;
+}
+
+.container-details details span {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.container-details details summary {
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-hr {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: var(--cor-branco);
+}
+
+#card1-img {
+    background-image: url(../image/pexels-karolina-grabowska-6629527.png);
+    background-size: cover;
+}
+
+#card2-img {
+    background-image: url(../image/pexels-yan-krukau-5794059.png);
+    background-size: cover;
+}
+
+#card3-img {
+    background-image: url(../image/pexels-anna-shvets-4587427.png);
+    background-size: cover;
+    background-position: center right;
+}
 @media (max-width: 600px) {
 
     footer {
         height: auto;
         background-color: #212223;
-        margin-top: 25vw;
         padding-bottom: 20px;
     }
 
@@ -296,14 +417,14 @@ footer .container-footer ul {
         padding-top: 2vw;
     }
 
-    .new-nomade {
+    .duvidas {
         font-size: 1.5rem;
         margin-bottom: 5vw;
         color: #fff;
         font-weight: bolder;
     }
 
-    .paragrafo-nomades {
+    .paragrafo {
         text-align: left;
         color: #aeb1b6;
         font-weight: 600;
@@ -327,10 +448,6 @@ footer .container-footer ul {
         display: grid;
     }
 
-    #verificado-selo-final {
-        width: 6vw;
-    }
-
     .container-card-box {
         padding: 2rem;
         height: auto;
@@ -341,7 +458,7 @@ footer .container-footer ul {
         padding: 0;
     }
 
-    .card{
+    .card {
         width: 18rem;
         height: 20rem;
     }
@@ -372,34 +489,56 @@ footer .container-footer ul {
     .container-card-box p {
         text-align: center;
         line-break: auto;
+        padding-bottom: 5rem;
     }
 
     section .container-first-section a button {
         margin-top: 35%;
         width: 18rem;
     }
-    .container-card-profissional{
+
+    .container-card-profissional {
         width: auto;
         margin: 1.5rem;
     }
-    section .container-first-section h1{
+
+    section .container-first-section h1 {
         position: relative;
         top: 0;
         width: auto;
         margin: 1.5rem;
     }
-    header{
+
+    header {
         background-image: url(../image/pexels-thirdman-6193373.jpg);
     }
-    .product-list:hover :not(:hover){
+
+    .product-list:hover :not(:hover) {
         opacity: 100%;
     }
-    .product-list li{
+
+    .product-list li {
         padding: 0rem 0rem;
+
     }
+
+    .container-details {
+        width: 20rem;
+    }
+
+    .container-footer ul .ancora {
+        font-size: 0.6rem;
+    }
+
+    #card3-img {
+        background-image: url(../image/pexels-anna-shvets-4587427.png);
+        background-size: cover;
+        background-position: right;
+    }
+
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
     .product-list {
         flex-wrap: wrap;
     }
