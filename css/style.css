@@ -166,19 +166,21 @@ section .container-first-section a button:hover {
 .container-card-box {
     padding-top: 5rem;
     height: auto;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .container-card-box h2 {
-    text-align: center;
     color: var(--cor-branco);
     font-size: 2rem;
     margin-bottom: 5rem;
 }
 
 .container-card-box p {
-    width: 100%;
-    text-align: left;
-    padding: 3rem 12rem 4rem 12rem;
+    margin: 3rem 0 3rem 0;
+    width:68vw;
+    text-align: center;
     line-height: 1.8rem;
     color: var(--cor-branco);
     font-weight: 600;
