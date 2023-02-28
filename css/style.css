@@ -440,6 +440,7 @@ footer .container-footer ul {
     display: inline-block;
     border-radius: 50%;
     width: 8rem;
+    height: 8rem;
     position: relative;
     z-index: 2;
     bottom: -5rem;
@@ -467,32 +468,32 @@ footer .container-footer ul {
 .card-depoimento h3{
     font-weight: 500;
     position: relative;
-    top: 6rem;
+    top: 5rem;
     color: var(--cor-branco);
 }
 .card-depoimento .nome-depoimento1{
     font-weight: 800;
     position: relative;
-    top: 10rem;
-    font-size: 1.2rem;
+    top: 7rem;
+    font-size: 1.1rem;
 }
 .card-depoimento .nome-depoimento2{
     font-weight: 800;
     position: relative;
-    top: 10rem;
-    font-size: 1.2rem;
+    top: 8.5rem;
+    font-size: 1.1rem;
 }
 .card-depoimento .nome-depoimento3{
     font-weight: 800;
     position: relative;
-    top: 8.7rem;
-    font-size: 1.2rem;
+    top:7rem;
+    font-size: 1.1rem;
 }
 .card-depoimento .nome-depoimento4{
     font-weight: 800;
     position: relative;
-    top: 8.7rem;
-    font-size: 1.2rem;
+    top: 8.3rem;
+    font-size: 1.1rem;
 }
 @media (max-width: 800px) {
 
