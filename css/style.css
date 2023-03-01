@@ -515,7 +515,6 @@ a #adquira:hover {
 
 .section-header-page-2{
     display: grid;
-    padding: 3rem;
     text-align: center;
     place-items: center;
     justify-content: center;
@@ -523,7 +522,8 @@ a #adquira:hover {
     background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB); 
 }
 .section-header-page-2 #titulo-page2{
-    font-size: 6rem;
+    font-size: 7rem;
+    margin-bottom: 2rem;
 }
 .section-header-page-2 .subtitulo-page2{
     text-align: center;
@@ -545,8 +545,20 @@ a #adquira-page2{
 a #adquira-page2:hover{
     cursor: pointer;
 }
+#img-desconto{
+    width: 13rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+iframe{
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 800px) {
+    #img-desconto{
+        display: none;
+    }
     .section-header-page-2{
         display: block;
         padding: 1rem;
