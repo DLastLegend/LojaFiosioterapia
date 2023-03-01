@@ -514,6 +514,7 @@ a #adquira:hover {
 }
 
 .section-header-page-2{
+    display: grid;
     padding: 3rem;
     text-align: center;
     place-items: center;
@@ -547,6 +548,7 @@ a #adquira-page2:hover{
 
 @media (max-width: 800px) {
     .section-header-page-2{
+        display: block;
         padding: 1rem;
         overflow-y: hidden;
     }
