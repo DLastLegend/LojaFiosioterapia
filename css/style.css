@@ -79,6 +79,7 @@ header nav ul {
 }
 
 header nav img {
+    filter: invert(100%);
     position: relative;
     margin-top: 1rem;
     width: 5rem;
@@ -179,7 +180,7 @@ section .container-first-section a button:hover {
 
 .container-card-box p {
     margin: 3rem 0 3rem 0;
-    width:68vw;
+    width: 68vw;
     text-align: center;
     line-height: 1.8rem;
     color: var(--cor-branco);
@@ -290,7 +291,9 @@ footer .container-footer ul {
     width: 1.1rem;
     fill: currentColor;
 }
-
+.social-media a svg:hover{
+    filter: invert(100%);
+}
 /*-- Tooltip Social Media --*/
 .tooltip-social {
     background: #262626;
@@ -437,7 +440,7 @@ footer .container-footer ul {
     /* background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB); */
 }
 
-.lista-depoimentos li img{
+.lista-depoimentos li img {
     display: inline-block;
     border-radius: 50%;
     width: 8rem;
@@ -449,7 +452,7 @@ footer .container-footer ul {
     border: 6px solid var(--cor-branco);
 }
 
-.lista-depoimentos{
+.lista-depoimentos {
     position: relative;
     align-items: center;
     display: flex;
@@ -458,7 +461,8 @@ footer .container-footer ul {
     max-width: 1300px;
     width: 100%;
 }
-.section-depoimentos h2{
+
+.section-depoimentos h2 {
     color: var(--cor-cinza);
     position: relative;
     bottom: -3rem;
@@ -466,36 +470,41 @@ footer .container-footer ul {
 
 }
 
-.card-depoimento h3{
+.card-depoimento h3 {
     font-weight: 500;
     position: relative;
     top: 5rem;
     color: var(--cor-branco);
 }
-.card-depoimento .nome-depoimento1{
+
+.card-depoimento .nome-depoimento1 {
     font-weight: 800;
     position: relative;
     top: 7rem;
     font-size: 1.1rem;
 }
-.card-depoimento .nome-depoimento2{
+
+.card-depoimento .nome-depoimento2 {
     font-weight: 800;
     position: relative;
     top: 8.5rem;
     font-size: 1.1rem;
 }
-.card-depoimento .nome-depoimento3{
+
+.card-depoimento .nome-depoimento3 {
     font-weight: 800;
     position: relative;
-    top:7rem;
+    top: 7rem;
     font-size: 1.1rem;
 }
-.card-depoimento .nome-depoimento4{
+
+.card-depoimento .nome-depoimento4 {
     font-weight: 800;
     position: relative;
     top: 8.3rem;
     font-size: 1.1rem;
 }
+
 a #adquira {
     background-color: var(--cor-verde);
     color: var(--cor-branco);
@@ -506,30 +515,36 @@ a #adquira {
     margin-top: 2rem;
     font-size: 1.3rem;
     font-weight: bolder;
-    text-decoration: underline;
+    text-decoration: underline 3px;
 }
 
 a #adquira:hover {
     cursor: pointer;
 }
 
-.section-header-page-2{
+.section-header-page-2 {
     display: grid;
     text-align: center;
     place-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB); 
+    background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB);
 }
-.section-header-page-2 #titulo-page2{
+
+.section-header-page-2 #titulo-page2 {
     font-size: 7rem;
     margin-bottom: 2rem;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    text-decoration: underline 3px;
 }
-.section-header-page-2 .subtitulo-page2{
+
+.section-header-page-2 .subtitulo-page2 {
     text-align: center;
     color: var(--cor-branco);
 }
-a #adquira-page2{
+
+a #adquira-page2 {
     background-color: cyan;
     outline: none;
     border: none;
@@ -542,39 +557,47 @@ a #adquira-page2{
     font-weight: bolder;
     margin: 2rem;
 }
-a #adquira-page2:hover{
+
+a #adquira-page2:hover {
     cursor: pointer;
 }
-#img-desconto{
+
+#img-desconto {
     width: 13rem;
-    position: absolute;
     top: 1rem;
     right: 1rem;
 }
-iframe{
+
+iframe {
     margin-bottom: 1rem;
 }
 
 @media (max-width: 800px) {
-    #img-desconto{
+    #img-desconto {
         display: none;
     }
-    .section-header-page-2{
+
+    .section-header-page-2 {
         display: block;
         padding: 1rem;
         overflow-y: hidden;
     }
-    .section-header-page-2 #titulo-page2{
+
+    .section-header-page-2 #titulo-page2 {
         font-size: 4rem;
     }
-    .section-header-page-2 .subtitulo-page2{
+
+    .section-header-page-2 .subtitulo-page2 {
         margin-top: 1.3rem;
-    }a #adquira-page2{
+    }
+
+    a #adquira-page2 {
         margin: 1rem;
         font-size: 1rem;
         width: auto;
         padding: 1.5rem;
     }
+
     footer {
         height: auto;
         background-color: #212223;
@@ -702,6 +725,7 @@ iframe{
     .container-details {
         width: 20rem;
     }
+
     .container-footer ul .ancora {
         font-size: 0.46rem;
     }
@@ -711,25 +735,30 @@ iframe{
         background-size: cover;
         background-position: right;
     }
-    .section-depoimentos h2{
+
+    .section-depoimentos h2 {
         margin-left: 1.5rem;
     }
-    .lista-depoimentos{
+
+    .lista-depoimentos {
         display: block;
     }
-    .container-profissional h2{
+
+    .container-profissional h2 {
         margin-bottom: 1rem;
-    } 
+    }
 }
 
 @media (max-width: 1100px) {
     .product-list {
         flex-wrap: wrap;
     }
-    .lista-depoimentos{
+
+    .lista-depoimentos {
         flex-wrap: wrap;
     }
-    .section-depoimentos{
+
+    .section-depoimentos {
         height: auto;
     }
 }
