@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -324,8 +324,9 @@ footer .container-footer ul {
 }
 
 .card-image-perfil {
-    background-image: url(../image/pexels-gustavo-trotta-13790048.jpg);
+    background-image: url(../image/image-perfil.jfif);
     background-size: cover;
+    background-position: center;
     height: 8rem;
     width: 8rem;
     border-radius: 50%;
@@ -480,21 +481,21 @@ footer .container-footer ul {
 .card-depoimento .nome-depoimento1 {
     font-weight: 800;
     position: relative;
-    top: 7rem;
+    top: 5.5rem;
     font-size: 1.1rem;
 }
 
 .card-depoimento .nome-depoimento2 {
     font-weight: 800;
     position: relative;
-    top: 8.5rem;
+    top: 9.6rem;
     font-size: 1.1rem;
 }
 
 .card-depoimento .nome-depoimento3 {
     font-weight: 800;
     position: relative;
-    top: 7rem;
+    top: 5.5rem;
     font-size: 1.1rem;
 }
 
@@ -571,7 +572,10 @@ a #adquira-page2:hover {
 iframe {
     margin-bottom: 1rem;
 }
-
+@font-face {
+    font-family: montserrat;
+    src: url(/font/Montserrat-Light.otf) format('opentype');
+  }
 @media (max-width: 800px) {
     #img-desconto {
         display: none;
