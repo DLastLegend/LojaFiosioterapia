@@ -237,7 +237,6 @@ footer .container-footer ul {
 }
 
 .container-profissional {
-    height: 100vh;
     text-align: center;
     background-color: var(--cor-branco);
     display: grid;
@@ -327,8 +326,8 @@ footer .container-footer ul {
     background-image: url(../image/image-perfil.jfif);
     background-size: cover;
     background-position: center;
-    height: 9rem;
-    width: 9rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
 }
 
@@ -488,7 +487,7 @@ footer .container-footer ul {
 .card-depoimento .nome-depoimento2 {
     font-weight: 800;
     position: relative;
-    top: 9.6rem;
+    top: 7rem;
     font-size: 1.1rem;
 }
 
@@ -502,12 +501,12 @@ footer .container-footer ul {
 .card-depoimento .nome-depoimento4 {
     font-weight: 800;
     position: relative;
-    top: 8.3rem;
+    top: 7rem;
     font-size: 1.1rem;
 }
 
 a #adquira {
-    background-color: var(--cor-verde);
+    background-image: linear-gradient(144deg, var(--cor-verde), #5B42F3 50%, #00DDEB);
     color: var(--cor-branco);
     border: none;
     border-radius: 20px;
@@ -538,6 +537,7 @@ a #adquira:hover {
     height: 20vh;
     justify-content: space-between;
     text-decoration: underline 3px;
+    overflow-y: hidden;
 }
 
 .section-header-page-2 .subtitulo-page2 {
@@ -699,7 +699,8 @@ iframe {
     a #adquira {
         margin-top: 30%;
         width: auto;
-        height: 3rem;
+        height: 5rem;
+        padding: 1rem;
         font-size: auto;
         overflow-y: hidden;
     }
